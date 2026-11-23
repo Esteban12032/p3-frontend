@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manager - P3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Product Manager</h1>
+        <p class="subtitle">REST API - Cloud Project P3</p>
+
+        <h2>Add New Product</h2>
+
+        <form id="productForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Product name"
+                required
+            >
+
+            <input
+                type="number"
+                id="price"
+                placeholder="Price"
+                min="0"
+                step="0.01"
+                required
+            >
+
+            <input
+                type="number"
+                id="stock"
+                placeholder="Stock"
+                min="0"
+                step="1"
+                required
+            >
+
+            <button type="submit">Add Product</button>
+
+        </form>
+
+        <p id="message"></p>
+
+        <h2>Product List</h2>
+
+        <button id="refreshButton" type="button">
+            Refresh Products
+        </button>
+
+        <div id="products"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
